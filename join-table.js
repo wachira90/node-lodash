@@ -26,7 +26,7 @@ let prod = [
 
 _.mixin({
 	'mergeByKey':  (arr1, prod, key) => {
-		var criteria = {};
+		let criteria = {};
 		criteria[key] = null;
 		return _.map(arr1,  (item) => {
 			criteria[key] = item[key];
